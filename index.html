@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                clr_primary: 'rgba(171, 239, 95, 1)',
+                clr_secondary: 'rgba(171, 239, 95, 0.5)',
+                clr_subLine: 'rgba(73, 73, 73, 1)',
+                clr_headLine: 'rgba(33, 33, 33, 1)',
+                clr_pera: 'rgba(115, 115, 115, 1)',
+              },
+              fontFamily:{
+                manrope:['Manrope', 'sans-serif']
+              },
+            }
+          }
+        }
+      </script>
+
+</head>
+<body class="font-manrope">
+
+    <!-- Header/ Nav Bar -->
+
+    <header class="w-10/12 mx-auto py-2 mt-2">
+        <main>
+            <nav class="flex justify-between items-center">
+                <div class="left flex justify-between w-8/12">
+
+                        <div class="logo">
+                            <div class="content flex items-center gap-1">
+                                <i class="px-2 rounded-full py-1 -rotate-45 bg-clr_primary text-xl   fa-solid fa-arrow-right"></i>
+                                <h1 class="text-xl font-extrabold ml-2 md:text-3xl">Rinterio</h1>
+                            </div>
+                        </div>
+
+                        <div class="item hidden md:block">
+                            <ul class="flex gap-3">
+                                <li class="text-black font-semibold">Home</li>
+                                <li class="text-clr_pera">Service</li>
+                                <li class="text-clr_pera">Portfolio</li>
+                                <li class="text-clr_pera">Blog</li>
+                                <li class="text-clr_pera">Contact Us</li>
+                            </ul>
+                        </div>
+
+                </div>
+
+                <div class="right hidden md:block  w-1/5">
+                   
+                <div class="content flex  items-center justify-between">
+                    <i class="text-2xl border-2 px-2 py-[2px] rounded-full fa-solid fa-magnifying-glass"></i>
+
+                    <i class="text-2xl border-2 px-[3px] py-[px] rounded-full fa-solid fa-cart-shopping"></i>
+
+                    <button class=" bg-clr_primary px-3 py-2 rounded-full font-semibold "> Book Consult
+                        <i class="bg-black text-white p-2 -rotate-45 text-[10px] rounded-full fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                </div>
+                <i class="md:hidden fa-solid fa-bars"></i>
+            </nav>
+
+
+
+        </main>
+    </header>
+
+    <!-- ! Hero Section-->
+     <section class="mt-8">
+        <main class="text-center w-11/12 mx-auto ">
+            <img class="mx-auto" src="./assets/banner.png" alt="duplex_house">
+
+            <h1 class="text-4xl md:w-1/2 md:text-5xl  font-extrabold mx-auto">A barn house of this design has a striking appearance</h1>
+
+            <p class="text-clr_pera mt-5 md:w-1/2 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <br>
+            <button class="bg-clr_secondary px-5 py-2 rounded-full cursor-pointer">View Details
+                <i class="font-[8px] -rotate-45 p-2 rounded-full ml-1 bg-black text-white  fa-solid fa-arrow-right"></i>
+            </button>
+        </main>
+     </section>
+  
+
+
+</body>
+</html>
